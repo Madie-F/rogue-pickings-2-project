@@ -9,16 +9,16 @@ body {
 	justify-content: center;
 	align-items: flex-start;
 	flex-flow: row wrap;
-	width: 90%;
 }
 
 .container{
-	max-width: 1200px;
+	max-width: 320px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: stretch;
 	flex-flow: column;
+	width: 90%;
 }
 
 h1,
@@ -27,78 +27,61 @@ h3 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
+	align-items: center;
 }
 
 h1 {
 	font-size: 1.875em;
+	width: 100%;
 }
 
 h2 {
 	font-size: 1.125em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
 }
 
 h3 {
 	font-size: .75em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
 }
 
 p {
 	font-size: .875em;
-	line-height: 21px;
-    padding: 0 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
+	line-height: 1.3125em;
+    padding: 0 1.875em;
 }
 
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
-	margin: 0 0 30px 0;
+	margin: 0 0 2em 0;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: column;
 	align-items: center;
-	flex-flow: column;
-}
-
-header nav, ul, li, a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
+	flex-flow: wrap;
 }
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	padding: 1em 0;
 }
 header h1 span {
 	color: #77a466;
 }
-
 header nav {
-	padding: 46px 0;
+	padding: .5em 1em;
+	width: 100%;
 }
 header nav ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em;
-	padding: 0 10px;
-	display: inline;
+	padding: .75em .75em .75em .75em;
 }
-
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -106,19 +89,12 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 .top-section, .bottom-section {
-	margin: 0 auto;
+	margin: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: column;
-	width: 80%;
-}
-
-.main-title, .main-title h2, .main-title p {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
+	width: 100%;
 }
 
 .main-image {
@@ -145,35 +121,21 @@ header nav ul li a{
 	line-height: 25px;
 }
 
-.section-one, .section-two, .section-three,
-.section-one h3, .section-two h3, .section-three h3,
-.menu, .menu li, .reviews, .address {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
-}
-
 .section-one,
 .section-two,
 .section-three {
-	width: 90%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 }
 
 .section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	padding: .5em .5em;
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: .75em .5em;
 }
 
 .menu {
@@ -182,8 +144,9 @@ header nav ul li a{
 	
 }
 .menu li {
-	padding: 10px 0;
+	padding: .5em .5em;
 	color:#77a466;
+	align-items: flex-start;
 }
 
 .reviews {
@@ -191,11 +154,13 @@ header nav ul li a{
 	font-size: 1em;
 	line-height: 21px;
 	width: 90%;
+	padding: .15em .5em;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+	padding: .15em .5em;
 }
 
 /*The widths are in a percentage!*/
@@ -213,7 +178,7 @@ footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: .875em;
+	font-size: 1.125em;
 }
 
 
@@ -223,7 +188,6 @@ footer span {
 	}
 	
 	body {
-		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 		font-size: 1em;
 		display: flex;
 		justify-content: center;
@@ -269,7 +233,6 @@ footer span {
 	}
 	
 	body {
-		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 		font-size: 1em;
 		display: flex;
 		justify-content: center;
